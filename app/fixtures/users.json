@@ -1,0 +1,308 @@
+{
+  "employees": [
+    {
+      "user_id": "emp_001",
+      "name": "Alice Martin",
+      "email": "alice.martin@example.com",
+      "laptop_id": "LT-001",
+      "account": {
+        "status": "active",
+        "locked": false,
+        "failed_attempts": 0,
+        "auto_unlock_minutes": null,
+        "mfa_enabled": true,
+        "last_password_change": "2026-09-01T09:00:00Z",
+        "recent_password_change": null,
+        "suspicious_signins": []
+      },
+      "vpn": {
+        "connected": false,
+        "client_version": "4.1",
+        "latest_version": "5.2",
+        "gateway": "vpn-gw-eu-1",
+        "gateway_status": "healthy",
+        "drops_last_hour": 3,
+        "last_drop_reason": "auth_timeout"
+      },
+      "device": {
+        "laptop_id": "LT-001",
+        "os": "Windows 11 23H2",
+        "compliant": true,
+        "last_seen": "2026-10-17T09:40:00Z",
+        "edr_alerts": []
+      },
+      "network": {
+        "gateway_status": "healthy",
+        "latency_ms": 28,
+        "packet_loss_pct": 0.0,
+        "dns_ok": true
+      },
+      "mock": { "troubleshooter_behavior": "ok", "tool_overrides": {} }
+    },
+    {
+      "user_id": "emp_002",
+      "name": "Bilal Haddad",
+      "email": "bilal.haddad@example.com",
+      "laptop_id": "LT-002",
+      "account": {
+        "status": "locked",
+        "locked": true,
+        "failed_attempts": 5,
+        "auto_unlock_minutes": 30,
+        "mfa_enabled": true,
+        "last_password_change": "2026-08-15T10:00:00Z",
+        "recent_password_change": null,
+        "suspicious_signins": []
+      },
+      "vpn": {
+        "connected": false,
+        "client_version": "5.2",
+        "latest_version": "5.2",
+        "gateway": "vpn-gw-eu-1",
+        "gateway_status": "healthy",
+        "drops_last_hour": 0,
+        "last_drop_reason": null
+      },
+      "device": {
+        "laptop_id": "LT-002",
+        "os": "Windows 11 23H2",
+        "compliant": true,
+        "last_seen": "2026-10-17T09:10:00Z",
+        "edr_alerts": []
+      },
+      "network": {
+        "gateway_status": "healthy",
+        "latency_ms": 22,
+        "packet_loss_pct": 0.0,
+        "dns_ok": true
+      },
+      "mock": { "troubleshooter_behavior": "ok", "tool_overrides": {} }
+    },
+    {
+      "user_id": "emp_003",
+      "name": "Chloe Dubois",
+      "email": "chloe.dubois@example.com",
+      "laptop_id": "LT-003",
+      "account": {
+        "status": "active",
+        "locked": false,
+        "failed_attempts": 0,
+        "auto_unlock_minutes": null,
+        "mfa_enabled": true,
+        "last_password_change": "2026-09-20T08:00:00Z",
+        "recent_password_change": null,
+        "suspicious_signins": []
+      },
+      "vpn": {
+        "connected": true,
+        "client_version": "5.2",
+        "latest_version": "5.2",
+        "gateway": "vpn-gw-eu-2",
+        "gateway_status": "healthy",
+        "drops_last_hour": 0,
+        "last_drop_reason": null
+      },
+      "device": {
+        "laptop_id": "LT-003",
+        "os": "Windows 11 23H2",
+        "compliant": true,
+        "last_seen": "2026-10-17T09:45:00Z",
+        "edr_alerts": []
+      },
+      "network": {
+        "gateway_status": "healthy",
+        "latency_ms": 19,
+        "packet_loss_pct": 0.0,
+        "dns_ok": true
+      },
+      "mock": { "troubleshooter_behavior": "ok", "tool_overrides": {} }
+    },
+    {
+      "user_id": "emp_004",
+      "name": "Daniel Okafor",
+      "email": "daniel.okafor@example.com",
+      "laptop_id": "LT-004",
+      "account": {
+        "status": "active",
+        "locked": false,
+        "failed_attempts": 0,
+        "auto_unlock_minutes": null,
+        "mfa_enabled": true,
+        "last_password_change": "2026-07-30T12:00:00Z",
+        "recent_password_change": null,
+        "suspicious_signins": []
+      },
+      "vpn": {
+        "connected": true,
+        "client_version": "5.2",
+        "latest_version": "5.2",
+        "gateway": "vpn-gw-us-1",
+        "gateway_status": "healthy",
+        "drops_last_hour": 0,
+        "last_drop_reason": null
+      },
+      "device": {
+        "laptop_id": "LT-004",
+        "os": "macOS 14.6",
+        "compliant": true,
+        "last_seen": "2026-10-17T09:30:00Z",
+        "edr_alerts": []
+      },
+      "network": {
+        "gateway_status": "healthy",
+        "latency_ms": 35,
+        "packet_loss_pct": 0.0,
+        "dns_ok": true
+      },
+      "mock": {
+        "troubleshooter_behavior": "ok",
+        "tool_overrides": { "check_network_status": "timeout" }
+      }
+    },
+    {
+      "user_id": "emp_005",
+      "name": "Elena Petrova",
+      "email": "elena.petrova@example.com",
+      "laptop_id": "LT-005",
+      "account": {
+        "status": "active",
+        "locked": false,
+        "failed_attempts": 2,
+        "auto_unlock_minutes": null,
+        "mfa_enabled": true,
+        "last_password_change": "2026-06-11T07:00:00Z",
+        "recent_password_change": null,
+        "suspicious_signins": [
+          {
+            "time": "2026-10-17T03:12:00Z",
+            "ip": "198.51.100.23",
+            "location": "Unknown (anonymizing proxy)",
+            "result": "success",
+            "risk": "high"
+          },
+          {
+            "time": "2026-10-17T03:15:00Z",
+            "ip": "198.51.100.23",
+            "location": "Unknown (anonymizing proxy)",
+            "result": "failure",
+            "risk": "high"
+          }
+        ]
+      },
+      "vpn": {
+        "connected": true,
+        "client_version": "5.2",
+        "latest_version": "5.2",
+        "gateway": "vpn-gw-eu-1",
+        "gateway_status": "healthy",
+        "drops_last_hour": 0,
+        "last_drop_reason": null
+      },
+      "device": {
+        "laptop_id": "LT-005",
+        "os": "Windows 11 23H2",
+        "compliant": false,
+        "last_seen": "2026-10-17T09:05:00Z",
+        "edr_alerts": [
+          {
+            "id": "EDR-7781",
+            "severity": "high",
+            "name": "Suspicious PowerShell execution (encoded command)",
+            "detected_at": "2026-10-17T03:20:00Z",
+            "status": "active"
+          }
+        ]
+      },
+      "network": {
+        "gateway_status": "healthy",
+        "latency_ms": 30,
+        "packet_loss_pct": 0.0,
+        "dns_ok": true
+      },
+      "mock": { "troubleshooter_behavior": "ok", "tool_overrides": {} }
+    },
+    {
+      "user_id": "emp_006",
+      "name": "Farid Nasser",
+      "email": "farid.nasser@example.com",
+      "laptop_id": "LT-006",
+      "account": {
+        "status": "active",
+        "locked": false,
+        "failed_attempts": 0,
+        "auto_unlock_minutes": null,
+        "mfa_enabled": true,
+        "last_password_change": "2026-10-17T02:47:00Z",
+        "recent_password_change": {
+          "at": "2026-10-17T02:47:00Z",
+          "ip": "203.0.113.45",
+          "location": "Unknown location (not seen before)",
+          "known_location": false,
+          "initiated_by": "self-service portal"
+        },
+        "suspicious_signins": []
+      },
+      "vpn": {
+        "connected": false,
+        "client_version": "5.2",
+        "latest_version": "5.2",
+        "gateway": "vpn-gw-eu-2",
+        "gateway_status": "healthy",
+        "drops_last_hour": 0,
+        "last_drop_reason": null
+      },
+      "device": {
+        "laptop_id": "LT-006",
+        "os": "Windows 11 23H2",
+        "compliant": true,
+        "last_seen": "2026-10-16T18:00:00Z",
+        "edr_alerts": []
+      },
+      "network": {
+        "gateway_status": "healthy",
+        "latency_ms": 25,
+        "packet_loss_pct": 0.0,
+        "dns_ok": true
+      },
+      "mock": { "troubleshooter_behavior": "ok", "tool_overrides": {} }
+    },
+    {
+      "user_id": "emp_007",
+      "name": "Grace Kim",
+      "email": "grace.kim@example.com",
+      "laptop_id": "LT-007",
+      "account": {
+        "status": "active",
+        "locked": false,
+        "failed_attempts": 0,
+        "auto_unlock_minutes": null,
+        "mfa_enabled": true,
+        "last_password_change": "2026-09-05T11:00:00Z",
+        "recent_password_change": null,
+        "suspicious_signins": []
+      },
+      "vpn": {
+        "connected": false,
+        "client_version": "5.2",
+        "latest_version": "5.2",
+        "gateway": "vpn-gw-eu-1",
+        "gateway_status": "healthy",
+        "drops_last_hour": 0,
+        "last_drop_reason": null
+      },
+      "device": {
+        "laptop_id": "LT-007",
+        "os": "Windows 11 23H2",
+        "compliant": true,
+        "last_seen": "2026-10-17T08:55:00Z",
+        "edr_alerts": []
+      },
+      "network": {
+        "gateway_status": "healthy",
+        "latency_ms": 21,
+        "packet_loss_pct": 0.0,
+        "dns_ok": true
+      }
+    }
+  ]
+}

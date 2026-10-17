@@ -1,0 +1,45 @@
+{
+  "articles": [
+    {
+      "id": "KB-VPN-001",
+      "title": "VPN disconnects with auth_timeout",
+      "keywords": ["vpn", "auth_timeout", "auth timeout", "disconnect", "drops", "dropping", "vpn client"],
+      "symptoms": "VPN connection drops repeatedly; client log shows auth_timeout.",
+      "cause": "VPN clients older than 5.0 use a deprecated auth handshake that times out against current gateways.",
+      "resolution_steps": [
+        "Confirm the VPN gateway is healthy.",
+        "Check the installed VPN client version.",
+        "If below 5.0, update the VPN client to the latest version (5.2) from the Software Center.",
+        "Reconnect and confirm the connection is stable."
+      ],
+      "applies_when": { "vpn_client_below": "5.0", "last_drop_reason": "auth_timeout" }
+    },
+    {
+      "id": "KB-ACC-002",
+      "title": "Account locked after failed sign-in attempts",
+      "keywords": ["locked", "lockout", "locked out", "failed attempts", "failed login", "can't log in", "cannot log in", "account locked"],
+      "symptoms": "User cannot sign in; account shows as locked.",
+      "cause": "5 consecutive failed sign-in attempts trigger an automatic 30 minute lockout.",
+      "resolution_steps": [
+        "Confirm the account is locked and how many failed attempts were recorded.",
+        "Tell the user the account unlocks automatically after 30 minutes.",
+        "Advise the user to check saved credentials on phones/other devices that may be retrying.",
+        "If urgent, the user can contact the Service Desk by phone for identity-verified unlock."
+      ],
+      "applies_when": { "account_locked": true }
+    },
+    {
+      "id": "KB-PRN-003",
+      "title": "Printer shows offline",
+      "keywords": ["printer", "print queue", "printing"],
+      "symptoms": "Printer appears offline in the print dialog.",
+      "cause": "Stale print queue or printer lost network connection.",
+      "resolution_steps": [
+        "Clear the print queue.",
+        "Power-cycle the printer.",
+        "Re-add the printer from the self-service portal."
+      ],
+      "applies_when": {}
+    }
+  ]
+}
